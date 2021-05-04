@@ -29,6 +29,15 @@ const Wrapper = styled.div`
   width: max-content;
 `;
 
+const NativeSelect = styled.select`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+`;
+
 const PresentationalBit = styled.div`
   background-color: ${COLORS.transparentGray15};
   color: ${COLORS.gray700};
@@ -47,16 +56,6 @@ const PresentationalBit = styled.div`
   }
 `;
 
-const NativeSelect = styled.select`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  pointer-events: none;
-`;
-
 const IconWrapper = styled.div`
   position: absolute;
   top: 0;
@@ -65,6 +64,7 @@ const IconWrapper = styled.div`
   width: var(--size);
   height: var(--size);
   margin: auto;
+  pointer-events: none;
 `;
 
 export default Select;
